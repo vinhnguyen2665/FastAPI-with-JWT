@@ -1,0 +1,35 @@
+2023-07-30 15:16:01,071 50695-DEBUG-Using selector: EpollSelector
+2023-07-30 15:16:39,004 50695-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '22P02', 'M': 'invalid input syntax for type boolean: "NONE_DELETE"', 'W': "unnamed portal parameter $4 = '...'", 'F': 'bool.c', 'L': '151', 'R': 'boolin'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, delete_flg) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user2@example.com', '$2b$12$XtsK8uLzxnZpRBiAd0X2X./hdp2Kov1GmeUPNX582qvMUzaDjHcWq', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:18:29,464 50695-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '22P02', 'M': 'invalid input syntax for type boolean: "NONE_DELETE"', 'W': "unnamed portal parameter $4 = '...'", 'F': 'bool.c', 'L': '151', 'R': 'boolin'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, delete_flg) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user2@example.com', '$2b$12$opeZbphScHpNHl2RebdP.upGnWO7KX0wCYD5qGKZqANawc.PArbq2', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:20:17,985 51367-DEBUG-Using selector: EpollSelector
+2023-07-30 15:20:29,128 51367-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '22001', 'M': 'value too long for type character(1)', 'F': 'varchar.c', 'L': '308', 'R': 'bpchar'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, delete_flg) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user1@example.com', '$2b$12$6nTExpXP2n59MY.pjH6nWu5N8yGPYYU2NfLQHkj1PBXslrRW7nqdm', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:28:00,907 52292-DEBUG-Using selector: EpollSelector
+2023-07-30 15:28:13,424 52292-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '22001', 'M': 'value too long for type character(1)', 'F': 'varchar.c', 'L': '308', 'R': 'bpchar'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, delete_flg) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user1@example.com', '$2b$12$fnqgz6Z9EgevrNQ3AO4oTe6ok5outn0OQA5V6GUu8yUnFJNMTAdwa', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:31:12,291 52676-DEBUG-Using selector: EpollSelector
+2023-07-30 15:31:16,836 52676-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '22001', 'M': 'value too long for type character(1)', 'F': 'varchar.c', 'L': '308', 'R': 'bpchar'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, delete_flg) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user1@example.com', '$2b$12$yNT0z1/ppUA1xDOdZmcDZeU1VgJ5Adc5BKKf19qrpkIr7B35//FVy', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:35:49,471 53074-DEBUG-Using selector: EpollSelector
+2023-07-30 15:35:52,421 53074-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '42703', 'M': 'column "value" of relation "tbl_users" does not exist', 'P': '52', 'F': 'parse_target.c', 'L': '1061', 'R': 'checkInsertTargets'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, value) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user1@example.com', '$2b$12$5HoV7YCqML677uVGdu.Gl.v9H3c/w1HjMV48vIJs6KcLd6AZL/Z6K', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 15:36:00,135 53094-DEBUG-Using selector: EpollSelector
+2023-07-30 15:36:19,559 53094-ERROR-(pg8000.dbapi.ProgrammingError) {'S': 'ERROR', 'V': 'ERROR', 'C': '42703', 'M': 'column "value" of relation "tbl_users" does not exist', 'P': '52', 'F': 'parse_target.c', 'L': '1061', 'R': 'checkInsertTargets'}
+[SQL: INSERT INTO tbl_users (full_name, email, password, value) VALUES (%s::VARCHAR, %s::VARCHAR, %s::VARCHAR, %s) RETURNING tbl_users.id]
+[parameters: ('string', 'user1@example.com', '$2b$12$6gsrlzIJ6stvpYfhGpOnD.1sZBg7Ytmid5.dblQH2nQnqcbE1l.D.', 'NONE_DELETE')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-30 17:37:13,613 69116-DEBUG-Using selector: EpollSelector
